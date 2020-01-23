@@ -1,8 +1,10 @@
-# Modern Wallaby JS Starter (TypeScript + Babel + Jest)
+# Shell Welcome Quote :: Data Contracts
+
+Data Contracts - is set of interfaces to be used on both sides API & UI.
 
 *Notice: If you have any propositions feel free to make an issue or create a pull request.*
 
-## Features
+## Technical Features
 
 * Wallaby JS works out of the box without any additional config  
   Notice: How to run in "Without Configuration" mode ([Official Wallaby JS Guide](https://wallabyjs.com/docs/intro/config.html#automatic-configuration))
@@ -17,39 +19,13 @@
 * Git hooks via [husky](https://www.npmjs.com/package/husky)
 * [Utility](/tools/merge-with-repository-template.sh) to automatically pull updates from this template repository (`npm run tpl-repo:merge`)
 
-## Ways to use
+## Quick Start
 
 1. Clone as is
 
-    1. `git clone git@github.com:korniychuk/wallaby-ts-starter.git`
+    1. `git clone git@github.com:Shell-Welcome-Quote/swq-data-contracts.git`
     2. `cd wallaby-ts-starter`
     3. `yarn`
-2. Fork
-
-    0. Click **Fork** git button
-    1. `git clone git@github.com:YOUR_GIT_NAME/wallaby-ts-starter.git`
-    2. `cd wallaby-ts-starter`
-    3. `yarn`
-3. Creating from template
-
-    0. Click **Fork** git button
-    1. Create new repository and specify template ![template](./resources/readme.git-create-from-template.png)
-    1. `git clone git@github.com:YOUR_GIT_NAME/NEW_REPOSITORY_NAME.git`
-    2. `cd NEW_REPOSITORY_NAME`
-    3. `yarn`
-4. Using with already cloned repository as an additional origin for pulling updates
-
-    1. Automatically
-    
-       ```bash
-       npm run merge-tpl-repo
-       ```
-    
-    2. Manually
-
-        1. `git remote add template git@github.com:korniychuk/wallaby-ts-starter.git`
-        2. `git fetch template`
-        3. `git merge --allow-unrelated-histories template/master`
 
 ## How to
 
