@@ -2,8 +2,6 @@
 
 Data Contracts - is set of interfaces to be used on both sides API & UI.
 
-*Notice: If you have any propositions feel free to make an issue or create a pull request.*
-
 ## Technical Features
 
 * Wallaby JS works out of the box without any additional config  
@@ -17,7 +15,7 @@ Data Contracts - is set of interfaces to be used on both sides API & UI.
 * [`.nvmrc`](https://github.com/nvm-sh/nvm#nvmrc)
 * Nothing platform related. This repository template can be used for NodeJS and for Browser development.
 * Git hooks via [husky](https://www.npmjs.com/package/husky)
-* [Utility](/tools/merge-with-repository-template.sh) to automatically pull updates from this template repository (`npm run tpl-repo:merge`)
+* [Utility](/tools/merge-with-repository-template.sh) to automatically pull updates from the template repository (`npm run tpl-repo:merge`)
 
 ## Quick Start
 
