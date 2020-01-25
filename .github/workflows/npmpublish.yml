@@ -39,5 +39,5 @@ jobs:
       - run: npm version patch -m 'Update package version version to %s'
       - run: npm publish dist --access public
         env:
-          NODE_AUTH_TOKEN: ${{secrets.npm_token}}
+          NPM_TOKEN: ${{secrets.npm_token}}
       - run: git push --tags
