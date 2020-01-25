@@ -32,6 +32,8 @@ jobs:
         uses: actions/download-artifact@v1
         with:
           name: dist
+      - name: Set GIT username & email
+        run: git config --global user.name 'GIT Workflow CI' && git config --global user.email dev@korniychuk.pro
       - run: npm version patch -m 'Update package version version to %s'
       - run: npm publish dist --access public
         env:
