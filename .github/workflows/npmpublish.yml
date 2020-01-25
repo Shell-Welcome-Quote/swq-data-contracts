@@ -34,6 +34,8 @@ jobs:
           name: dist
       - name: Set GIT username & email
         run: git config --global user.name 'GIT Workflow CI' && git config --global user.email dev@korniychuk.pro
+      - name: Generate public package.json
+        run: npm run gen-public-package.json
       - run: npm version patch -m 'Update package version version to %s'
       - run: npm publish dist --access public
         env:
