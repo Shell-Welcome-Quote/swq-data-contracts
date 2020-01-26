@@ -3,7 +3,7 @@
   "description": "Shell Welcome Quote :: Data Contracts",
   "license": "GPL-3.0",
   "private": false,
-  "version": "0.0.5",
+  "version": "0.0.6",
   "bugs": {
     "url": "https://github.com/Shell-Welcome-Quote/swq-data-contracts/issues"
   },
