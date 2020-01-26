@@ -5,12 +5,12 @@
   "private": false,
   "version": "0.0.3",
   "bugs": {
-    "url": "https://github.com/korniychuk/wallaby-ts-webpack-starter/issues"
+    "url": "https://github.com/Shell-Welcome-Quote/swq-data-contracts/issues"
   },
-  "homepage": "https://github.com/korniychuk/wallaby-ts-webpack-starter#readme",
+  "homepage": "https://github.com/Shell-Welcome-Quote/swq-data-contracts",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/korniychuk/wallaby-ts-webpack-starter.git"
+    "url": "git@github.com:Shell-Welcome-Quote/swq-data-contracts.git"
   },
   "engines": {
     "node": "^12.14.1",

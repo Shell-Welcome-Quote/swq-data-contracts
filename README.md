@@ -66,7 +66,7 @@ yarn
 
 ### How to build and publish NPM package
 
-CI configuration details here: [.github/npmpublish.yml](.github/workflows/npmpublish.yml)
+CI configuration details here: [.github/workflows/npmpublish.yml](.github/workflows/npmpublish.yml)
 
 ```bash
 npm run pre-push
