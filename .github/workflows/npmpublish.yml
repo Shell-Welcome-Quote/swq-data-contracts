@@ -34,9 +34,9 @@ jobs:
           name: dist
       - name: Set GIT username & email
         run: git config --global user.name 'GIT Workflow CI' && git config --global user.email dev@korniychuk.pro
+      - run: npm version patch -m 'Update package version version to %s'
       - name: Generate public package.json
         run: npm run gen-public-package.json
-      - run: npm version patch -m 'Update package version version to %s'
       - name: NPM Authentication
         run: echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/.npmrc
         env:
