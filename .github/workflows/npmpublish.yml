@@ -37,11 +37,9 @@ jobs:
       - name: Generate public package.json
         run: npm run gen-public-package.json
       - run: npm version patch -m 'Update package version version to %s'
-      - name: Test secret
-        run: 'echo "SECRET: ${SUPER_SECRET}"'
-        env:
-          SUPER_SECRET: ${{secrets.test_secret}}
-      - run: npm publish dist --access public
+      - name: NPM Authentication
+        run: echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/.npmrc
         env:
           NPM_TOKEN: ${{secrets.npm_token}}
+      - run: npm publish dist --access public
       - run: git push --tags
