@@ -2,7 +2,17 @@
 
 Data Contracts - is set of interfaces to be used on both sides API & UI.
 
-## Technical Features
+## Usage
+
+```bash
+npm i swq-data-contracts
+# or
+yarn add swq-data-contracts
+```
+
+## Development guide
+
+### Technical Features
 
 * Wallaby JS works out of the box without any additional config  
   Notice: How to run in "Without Configuration" mode ([Official Wallaby JS Guide](https://wallabyjs.com/docs/intro/config.html#automatic-configuration))
@@ -17,15 +27,13 @@ Data Contracts - is set of interfaces to be used on both sides API & UI.
 * Git hooks via [husky](https://www.npmjs.com/package/husky)
 * [Utility](/tools/merge-with-repository-template.sh) to automatically pull updates from the template repository (`npm run tpl-repo:merge`)
 
-## Quick Start
+### Cloning project
 
-1. Clone as is
-
-    1. `git clone git@github.com:Shell-Welcome-Quote/swq-data-contracts.git`
-    2. `cd wallaby-ts-starter`
-    3. `yarn`
-
-## How to
+```bash
+git clone git@github.com:Shell-Welcome-Quote/swq-data-contracts.git
+cd swq-data-contracts
+yarn
+```
 
 ### How to use NodeJS version from the `.nvmrc`
 
@@ -55,6 +63,19 @@ Data Contracts - is set of interfaces to be used on both sides API & UI.
 
   `npm run test -- src/my.spec.ts`  
   `npm run test:watch -- src/my.spec.ts`
+
+### How to build and publish NPM package
+
+CI configuration details here: [.github/npmpublish.yml](.github/workflows/npmpublish.yml)
+
+```bash
+npm run pre-push
+&& npm version patch -m 'Update package version version to %s'
+&& npm run gen-public-package.json
+&& cp README.md dist/
+&& npm publish dist --access public
+&& git push --no-verify & git push --tags --no-verify
+```
 
 ## Author
 

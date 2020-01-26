@@ -37,6 +37,8 @@ jobs:
       - run: npm version patch -m 'Update package version version to %s'
       - name: Generate public package.json
         run: npm run gen-public-package.json
+      - name: Generate public README.md
+        run: cp README.md dist/
       - name: NPM Authentication
         run: echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/.npmrc
         env:
