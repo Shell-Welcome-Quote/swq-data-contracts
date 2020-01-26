@@ -74,7 +74,7 @@ npm run pre-push
 && npm run gen-public-package.json
 && cp README.md dist/
 && npm publish dist --access public
-&& git push --no-verify & git push --tags --no-verify
+&& git push --no-verify && git push --tags --no-verify
 ```
 
 ## Author
